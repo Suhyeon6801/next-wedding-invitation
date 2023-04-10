@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import React from 'react';
 
 export const Footer = () => {
   return <FooterCover>{'여기는 푸터죠'}</FooterCover>;
