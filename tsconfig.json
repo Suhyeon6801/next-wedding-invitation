@@ -18,6 +18,7 @@
     "paths": {
       "@/*": ["./*"]
     },
+    "types":["kakao.maps.d.ts"],
     "jsxImportSource": "@emotion/react"
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
