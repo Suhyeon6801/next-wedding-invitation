@@ -10,31 +10,24 @@ import styled from '@emotion/styled';
 const IndexPage: NextPage = () => {
   return (
     <>
-    <MainFrame>
+    {/* <Background> */}
       <Intro />
       <Photo />
       <MapInfo />
       <Account />
-      <GuestBook />
-      <Footer />
-    </MainFrame>
+    {/* </Background> */}
     </>
   );
 }
 
-const MainFrame = styled.div`
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: center;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 0;
-  width: 800px;
-  height: 1423px;
-  style="position:absolute; top:0px; left: 0px color: #f7f7f7;
+const Background = styled.div`
+
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 export default IndexPage;

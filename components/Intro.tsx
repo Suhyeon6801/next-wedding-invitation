@@ -10,7 +10,7 @@ export const Intro = () => {
         <TitleSection />
         <MainPhoto />
         <TimeSpaceSection />
-        <InvitationText />
+        <GreetingText />
         <FromInfo />
       </>
     )
@@ -19,16 +19,6 @@ export const Intro = () => {
 const TitleSection = () => {
   return (
     <Title>이승현 & 김수현</Title>
-  )
-}
-
-const TimeSpaceSection = () => {
-  return (
-    <TimeSpace>
-      <div>2023.06.17 토요일 오후 12시</div>
-      <br/>
-      <div>1784, 28층 스카이홀</div>
-    </TimeSpace>
   )
 }
 
@@ -49,9 +39,19 @@ const MainPhoto = () => {
   );
 }
 
-const InvitationText = () => {
+const TimeSpaceSection = () => {
   return (
-    <Invitation>
+    <TimeSpace>
+      <div>2023.06.17 토요일 오후 12시</div>
+      <br/>
+      <div>1784, 28층 스카이홀</div>
+    </TimeSpace>
+  )
+}
+
+const GreetingText = () => {
+  return (
+    <InfoText>
       <div>서로가 마주보며 다져온 사랑을</div>
       <br/>
       <div>이제 함께 한곳을 바라보며 걸어갈 수 있는</div>
@@ -61,17 +61,17 @@ const InvitationText = () => {
       <div>저희 두 사람이 사랑의 이름으로 지켜나갈 수 있게</div>
       <br/>
       <div>앞날을 축복해 주시면 감사하겠습니다.</div>
-    </Invitation>
+    </InfoText>
   )
 }
 
 const FromInfo = () => {
   return (
-    <div>
+    <InfoText>
       <div>000, 000 장남 000</div>
       <br/>
       <div>ㅁㅁㅁ, ㅁㅁㅁ 장녀 ㅁㅁㅁ</div>
-    </div>
+    </InfoText>
   )
 }
 
@@ -84,6 +84,15 @@ const Header = styled.header`
   font-family: cursive;
 `;
 
+const Title = styled.h1`
+  display: absolute;
+  justify-content: center;
+  align-items: center;
+  text-align : center;
+  margin: 30px;
+  padding: 30px;
+`;
+
 const PhotoContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -91,23 +100,17 @@ const PhotoContainer = styled.div`
   height: 100vh;
 `
 
-const Title = styled.h1`
-  display: flex;
+const TimeSpace = styled.h3`
+display: absolute;
   justify-content: center;
   align-items: center;
-  margin: 50px;
-  padding: 30px;
-  background-color: #ff33ee;
-`;
-
-const TimeSpace = styled.h3`
   margin: 50px;
   padding: 30px;
   background-color: #0033ee;
 `;
 
-const Invitation = styled.div`
-  display: flex;
+const InfoText = styled.div`
+  display: absolute;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -116,3 +119,6 @@ const Invitation = styled.div`
   padding: 30px;
   background-color: #ffe300;
 `;
+
+// const  = styled.div`
+// `;
