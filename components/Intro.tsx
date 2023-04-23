@@ -2,6 +2,8 @@ import React from 'react';
 import Image from 'next/image'
 import styled from '@emotion/styled';
 import CAT7 from '../public/images/cat7.jpeg';
+import FLOWER from '../public/images/flower.png'
+import { Autour_One } from '@next/font/google';
 
 export const Intro = () => {
     return (
@@ -28,12 +30,7 @@ const MainPhoto = () => {
       <Image
         src={CAT7}
         alt="main cat"
-        width={500}
-        height={500}
-        style={{
-          height: '100vh',
-          objectFit: "cover"
-        }}
+        layout="responsive"
       />
     </PhotoContainer>
   );
@@ -52,6 +49,17 @@ const TimeSpaceSection = () => {
 const GreetingText = () => {
   return (
     <InfoText>
+      <Image 
+        src={FLOWER} 
+        alt={'image1'} 
+        style={{
+          display: 'flex', 
+          objectFit: 'contain', 
+          margin: 'auto',
+          paddingBottom: '15px',
+      }}/>
+      <h3>우리의 약속, 여러분과 함께 나누고 싶어요!</h3>
+      <br/>
       <div>서로가 마주보며 다져온 사랑을</div>
       <br/>
       <div>이제 함께 한곳을 바라보며 걸어갈 수 있는</div>
@@ -68,9 +76,9 @@ const GreetingText = () => {
 const FromInfo = () => {
   return (
     <InfoText>
-      <div>000, 000 장남 000</div>
+      <div>000, 000 장남 박동현</div>
       <br/>
-      <div>ㅁㅁㅁ, ㅁㅁㅁ 장녀 ㅁㅁㅁ</div>
+      <div>ㅁㅁㅁ, ㅁㅁㅁ 장녀 박혜진</div>
     </InfoText>
   )
 }
@@ -83,7 +91,7 @@ const Header = styled.header`
 `;
 
 const Title = styled.h1`
-  margin: 30px;
+  margin: 20px;
   padding: 30px;
 `;
 
@@ -91,19 +99,15 @@ const PhotoContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  object-fit:cover;
 `
 
 const TimeSpace = styled.h3`
   padding: 30px;
-  background-color: #0033ee;
 `;
 
 const InfoText = styled.div`
   flex-wrap: wrap;
   padding: 30px;
-  background-color: #ffe300;
+  position: relative;
 `;
-
-// const  = styled.div`
-// `;

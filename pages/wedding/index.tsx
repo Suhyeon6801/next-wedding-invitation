@@ -27,7 +27,14 @@ const Background = styled.div`
   flex-direction: column;
   text-align: center;
   background-color: #f5f5f5;
-  margin: 0 20em;
+  margin-left: 300px;
+  margin-right: 300px;
+  font-family: 'Nanum Myeongjo', serif;
+
+  @media (max-width: 767px) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 `;
 
 export default IndexPage;

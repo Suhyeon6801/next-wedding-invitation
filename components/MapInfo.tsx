@@ -13,11 +13,14 @@ const Location = {
 export const MapInfo = () => {
   return (
     <>
-      <h1>오시는 길</h1>
+      <h1 style={{margin: '30px'}}>오시는 길</h1>
+      <div style={{marginBottom: '20px'}}>
+        경기 성남시 분당구 정자일로 95
+      </div>
       <Script src={KAKAO_SDK_URL} strategy="beforeInteractive" />
       <Map
         center={{ lat: Location.lat, lng: Location.lng }}
-        style={{ width: "100%", height: "360px" }}
+        style={{ width: "100%", height: "360px"}}
         level={3}
       >
       <MapMarker 
@@ -31,9 +34,9 @@ export const MapInfo = () => {
 }
 
 const GoToMap = styled.div`
-  margin: 8px;
+  margin-top: 20px;
   padding: 10px;
   text-algin: center;
   color: #000;
-  background: #00ff00;
+  background: #eedbdc;
 `;

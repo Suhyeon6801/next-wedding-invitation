@@ -5,11 +5,10 @@ import React, { useState } from "react";
 export const Account = () => {
 
     return (
-        <>
+        <div style={{paddingBottom: '30px'}}>
         <div style={{ 
             background: '#f0e9d2',
-            textAlign: 'center', 
-            margin: '30px' ,
+            margin: '30px 0px',
             padding: '20px'
           }}>멀리서 마음 전하기</div>
         <AccountBox 
@@ -28,25 +27,27 @@ export const Account = () => {
         <AccountBox 
             title='신부 측 계좌번호 보기' 
             contents={
-                <div>
-                <AccountInfo 
+                <div style={{
+                    padding: '10px',
+                }}>
+                    <AccountInfo 
                     name='홍길동'
                     bankName='국민은행'
                     bankAccountNumber='123-456-789'
-                />
-                <AccountInfo 
+                    />
+                    <AccountInfo 
                     name='홍깅ㄹ동'
                     bankName='국민은행'
                     bankAccountNumber='123-456-789'
-                />
-                <AccountInfo 
+                    />
+                    <AccountInfo 
                     name='홍깅ㄹ동'
                     bankName='국민은행'
                     bankAccountNumber='123-456-789'
-                />
+                    />
                 </div>
         }/>
-    </>
+    </div>
     )
 }
 
@@ -71,18 +72,30 @@ const AccountInfo = ({bankName, bankAccountNumber, name}:{
     });
 
     return(
-        <div onClick={copyAccounNumberToClipBoard}>
-            <div>{bankName}</div>
-            <div>{bankAccountNumber}</div>
-            <div>{name}</div>
+        <div 
+            onClick={copyAccounNumberToClipBoard} style={{
+                overflow: 'hidden'
+                }}>
+            <div style={{
+                float: 'left',
+                paddingLeft: '30px'
+            }}>
+                <p>
+                    <span>{bankName} </span>
+                    <span>{bankAccountNumber}</span>
+                </p>
+                <p>{name}</p>
+            </div>
+            <CopyButton>복사</CopyButton>
         </div>
     )
 }
 
 const Container = styled.div`
-  background:  #f0e9d2;
   border-radius: 6px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
   padding: 10px 13px;
   cursor: pointer;
 `;
@@ -91,4 +104,20 @@ const Contents = styled.div`
   border-top: 1px solid #000000b5;
   margin-top: 10px;
   padding-top: 10px;
+  box-sizing: border-box;
+`;
+
+const CopyButton = styled.p`
+color: #fff;
+font-family: 'Pre-M';
+display: inline-block;
+height: 20px;
+line-height: 20px;
+cursor: pointer;
+border-radius: 3px;
+font-size: 0.75rem;
+padding: 10px 20px;
+margin: 15px;
+background-color: #d5d5d5;
+float: right;
 `;
