@@ -7,11 +7,10 @@ export const Intro = () => {
     return (
       <>
         <Header>SeungHyun & Suhyeon Wedding Card</Header>
+        <TitleSection />
         <MainPhoto />
-        <FlexContainer>
-          <TitleSection />
-        </FlexContainer>
-        <Invitation />
+        <TimeSpaceSection />
+        <InvitationText />
         <FromInfo />
       </>
     )
@@ -19,50 +18,50 @@ export const Intro = () => {
 
 const TitleSection = () => {
   return (
-    <>
-      <Title>
-        <div>이승현 & 김수현</div>
-      </Title>
-      <SubTitle>
-        <div>2023.06.17 토요일 오후 12시</div>
-        <br/>
-        <div>1784, 28층 스카이홀</div>
-      </SubTitle>
-    </>
+    <Title>이승현 & 김수현</Title>
+  )
+}
+
+const TimeSpaceSection = () => {
+  return (
+    <TimeSpace>
+      <div>2023.06.17 토요일 오후 12시</div>
+      <br/>
+      <div>1784, 28층 스카이홀</div>
+    </TimeSpace>
   )
 }
 
 const MainPhoto = () => {
   return (
-    <Image
-      src={CAT7}
-      alt="main cat"
-      width={500}
-      height={500}
-      style={{
-        width: '100vw',
-        height: '100vh',
-        objectFit: 'cover',
-        position: 'absolute',
-        zIndex: -1,
-      }}
-    />
+    <PhotoContainer>
+      <Image
+        src={CAT7}
+        alt="main cat"
+        width={500}
+        height={500}
+        style={{
+          height: '100vh',
+          objectFit: "cover"
+        }}
+      />
+    </PhotoContainer>
   );
 }
 
-const Invitation = () => {
+const InvitationText = () => {
   return (
-    <div>
-      <p>서로가 마주보며 다져온 사랑을</p>
+    <Invitation>
+      <div>서로가 마주보며 다져온 사랑을</div>
       <br/>
-      <p>이제 함께 한곳을 바라보며 걸어갈 수 있는</p>
+      <div>이제 함께 한곳을 바라보며 걸어갈 수 있는</div>
       <br/>
-      <p>큰 사랑으로 키우고자 합니다.</p>
+      <div>큰 사랑으로 키우고자 합니다.</div>
       <br/>
-      <p>저희 두 사람이 사랑의 이름으로 지켜나갈 수 있게</p>
+      <div>저희 두 사람이 사랑의 이름으로 지켜나갈 수 있게</div>
       <br/>
-      <p>앞날을 축복해 주시면 감사하겠습니다.</p>
-    </div>
+      <div>앞날을 축복해 주시면 감사하겠습니다.</div>
+    </Invitation>
   )
 }
 
@@ -85,30 +84,35 @@ const Header = styled.header`
   font-family: cursive;
 `;
 
-const FlexContainer = styled.div`
+const PhotoContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
   justify-content: center;
-  text-align: center;
-`;
-
-const TitleBox = styled.div`
-  margin: 59.7vh 0 24px;
-  background: grey;
-`;
+  align-items: center;
+  height: 100vh;
+`
 
 const Title = styled.h1`
-  margin: 70vh 0 24px;
-  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  padding: 30px;
+  background-color: #ff33ee;
 `;
 
-const SubTitle = styled.h3`
-  color: white;
+const TimeSpace = styled.h3`
+  margin: 50px;
+  padding: 30px;
+  background-color: #0033ee;
 `;
 
-const HorizontalLine = styled.div`
-  height: 40vh;
-  border-left: 1px solid white;
+const Invitation = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 50px;
+  padding: 30px;
+  background-color: #ffe300;
 `;
