@@ -6,30 +6,27 @@ export const Account = () => {
 
     return (
         <div style={{paddingBottom: '30px'}}>
-        <div style={{ 
-            background: '#f0e9d2',
-            margin: '30px 0px',
-            padding: '20px'
-          }}>멀리서 마음 전하기</div>
-        <AccountBox 
-            title='신랑 측 계좌번호 보기' 
-            contents={
+            <h3 style={{ 
+                color: '#E9B4B6',
+                margin: '50px 30px 20px 20px',
+                padding: '10px'
+            }}>멀리서 마음 전하기</h3>
+            <AccountBox 
+                title='신랑 측 계좌번호 보기' 
+                contents={
+                    <div>
+                    <AccountInfo 
+                        name='홍길동'
+                        bankName='국민은행'
+                        bankAccountNumber='123-456-789'
+                    />
+                    </div>
+            }/>     
+            <br/>
+            <AccountBox 
+                title='신부 측 계좌번호 보기' 
+                contents={
                 <div>
-                <AccountInfo 
-                    name='홍길동'
-                    bankName='국민은행'
-                    bankAccountNumber='123-456-789'
-                />
-                </div>
-        }/>
-        
-        <br/>
-        <AccountBox 
-            title='신부 측 계좌번호 보기' 
-            contents={
-                <div style={{
-                    padding: '10px',
-                }}>
                     <AccountInfo 
                     name='홍길동'
                     bankName='국민은행'
@@ -72,22 +69,16 @@ const AccountInfo = ({bankName, bankAccountNumber, name}:{
     });
 
     return(
-        <div 
-            onClick={copyAccounNumberToClipBoard} style={{
-                overflow: 'hidden'
-                }}>
-            <div style={{
-                float: 'left',
-                paddingLeft: '30px'
-            }}>
+        <InfoContainer onClick={copyAccounNumberToClipBoard} >
+            <Text>
                 <p>
                     <span>{bankName} </span>
                     <span>{bankAccountNumber}</span>
                 </p>
-                <p>{name}</p>
-            </div>
+                <span>{name}</span>
+            </Text>
             <CopyButton>복사</CopyButton>
-        </div>
+        </InfoContainer>
     )
 }
 
@@ -98,6 +89,8 @@ const Container = styled.div`
   margin-right: 30px;
   padding: 10px 13px;
   cursor: pointer;
+  border: 1px solid #E9B4B6;
+  border-radius: 2px;
 `;
 
 const Contents = styled.div`
@@ -107,17 +100,26 @@ const Contents = styled.div`
   box-sizing: border-box;
 `;
 
+const InfoContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const Text = styled.p`
+  text-align: left;
+  maring-left: 10px;
+`;
+
 const CopyButton = styled.p`
 color: #fff;
-font-family: 'Pre-M';
-display: inline-block;
-height: 20px;
+  text-align: left;
+  background-color: #d5d5d5;
+  font-size: 0.5em;
+padding: 8px 15px;
+margin-top: 30px;
+margin-bottom: 15px;
+border-radius: 3px;
 line-height: 20px;
 cursor: pointer;
-border-radius: 3px;
-font-size: 0.75rem;
-padding: 10px 20px;
-margin: 15px;
-background-color: #d5d5d5;
-float: right;
 `;

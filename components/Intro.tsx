@@ -8,8 +8,20 @@ import MAIN from '../public/images/main_sample.jpeg';
 export const Intro = () => {
     return (
       <>
-        {/* <Header>SeungHyun & Suhyeon Wedding Card</Header> */}       
-        <ImageWithText>
+        <Header>Wedding Card</Header>  
+        <PhotoContainer>
+          <Image 
+            src={MAIN}  
+            alt={'main'}
+            layout="responsive" 
+            style={{
+              width: '100vw',
+              height: '100vh',
+              objectFit: 'contain',
+            }}
+          /> 
+        </PhotoContainer>        
+        {/* <ImageWithText>
           <div className="photo">
             <Image 
               src={MAIN} 
@@ -24,9 +36,10 @@ export const Intro = () => {
           </div>
            <div className="text-container">
             <span>박혜진, 박동현</span>
-            <span style={{fontSize: '0.5em', marginTop: '10px'}}>우리의 결혼식에 초대합니다</span>
+            <span style={{fontSize: '0.7em', marginTop: '10px'}}>우리의 결혼식에 초대합니다</span>
           </div>
-        </ImageWithText>
+        </ImageWithText> */}
+        <TitleSection />
         {/* <TitleSection />
         <MainPhoto /> */}
         <TimeSpaceSection />
@@ -72,11 +85,12 @@ const GreetingText = () => {
         alt={'image1'} 
         style={{
           display: 'flex', 
-          objectFit: 'contain', 
+          objectFit:'contain',
           margin: 'auto',
           paddingBottom: '15px',
       }}/>
-      <h3>우리의 약속, 여러분과 함께 나누고 싶어요!</h3>
+      <h3>우리의 약속, <br/><br/> 여러분과 함께 나누고 싶어요!</h3>
+      <br/>
       <br/>
       <div>서로가 마주보며 다져온 사랑을</div>
       <br/>
@@ -87,6 +101,7 @@ const GreetingText = () => {
       <div>저희 두 사람이 사랑의 이름으로 지켜나갈 수 있게</div>
       <br/>
       <div>앞날을 축복해 주시면 감사하겠습니다.</div>
+      <br/>
     </InfoText>
   )
 }
@@ -94,9 +109,8 @@ const GreetingText = () => {
 const FromInfo = () => {
   return (
     <InfoText>
-      <div>000, 000 장남 박동현</div>
-      <br/>
-      <div>ㅁㅁㅁ, ㅁㅁㅁ 장녀 박혜진</div>
+      <h3>000, 000 장남 박동현</h3>
+      <h3>ㅁㅁㅁ, ㅁㅁㅁ 장녀 박혜진</h3>
     </InfoText>
   )
 }
@@ -120,7 +134,7 @@ const ImageWithText = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: bold;
     color:#ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -139,8 +153,8 @@ const Header = styled.header`
 `;
 
 const Title = styled.h1`
-  margin: 20px;
-  padding: 30px;
+  padding: 15px 30px;
+  margin: 50px 0px 0px 0px;
 `;
 
 const PhotoContainer = styled.div`
@@ -150,11 +164,13 @@ const PhotoContainer = styled.div`
 `
 
 const TimeSpace = styled.h3`
-  padding: 30px;
+  padding: 15px 0px;
+  margin: 50px 0px;
 `;
 
 const InfoText = styled.div`
   flex-wrap: wrap;
   padding: 30px;
   position: relative;
+  background-color: #f5f5f5;
 `;

@@ -5,14 +5,14 @@ import {CATS_IMAGES} from '@/public/images/images';
 export const Photo = () => {
     return (
       <>
-        <div 
+        <h3
           style={{ 
             borderRadius: '100px', 
             textAlign: 'center', 
             margin: '30px' 
           }}>
           Album
-        </div>
+        </h3>
         <VerticalContainer showSmallerImageOnMobile={false}>
             {CATS_IMAGES.map((img, index) => (
               <Image src={img} key={index} alt={'스튜디오 사진'} width={300} height={300}/>

@@ -13,7 +13,7 @@ const Location = {
 export const MapInfo = () => {
   return (
     <>
-      <h1 style={{margin: '30px'}}>오시는 길</h1>
+      <h3 style={{margin: '30px'}}>오시는 길</h3>
       <div style={{marginBottom: '20px'}}>
         경기 성남시 분당구 정자일로 95
       </div>
@@ -34,7 +34,6 @@ export const MapInfo = () => {
 }
 
 const GoToMap = styled.div`
-  margin-top: 20px;
   padding: 10px;
   text-algin: center;
   color: #000;
