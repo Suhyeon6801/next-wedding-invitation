@@ -76,19 +76,13 @@ const FromInfo = () => {
 }
 
 const Header = styled.header`
-  background-color: white;
   padding: 20px;
-  text-align : center;
   font-size: 1.2em;
   font-stretch: 150%;
   font-family: cursive;
 `;
 
 const Title = styled.h1`
-  display: absolute;
-  justify-content: center;
-  align-items: center;
-  text-align : center;
   margin: 30px;
   padding: 30px;
 `;
@@ -101,21 +95,12 @@ const PhotoContainer = styled.div`
 `
 
 const TimeSpace = styled.h3`
-display: absolute;
-  justify-content: center;
-  align-items: center;
-  margin: 50px;
   padding: 30px;
   background-color: #0033ee;
 `;
 
 const InfoText = styled.div`
-  display: absolute;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
-  text-align: center;
-  margin: 50px;
   padding: 30px;
   background-color: #ffe300;
 `;

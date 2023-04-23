@@ -31,8 +31,9 @@ export const MapInfo = () => {
 }
 
 const GoToMap = styled.div`
-  margin: 10px;
-  padding: 20px;
+  margin: 8px;
+  padding: 10px;
+  text-algin: center;
   color: #000;
   background: #00ff00;
 `;
