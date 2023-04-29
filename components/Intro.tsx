@@ -149,14 +149,14 @@ const Title = styled.h2`
 `;
 
 const TimeSpace = styled.div`
-  padding: 0px 0px 0px 30px;
+  padding: 0px 30px 0px 30px;
   margin: 35px 0px 80px 0px;
   text-align: left;
 `;
 
 const InfoText = styled.div`
   flex-wrap: wrap;
-  padding: 10px 0px 0px 30px;
+  padding: 10px 30px 0px 30px;
   margin: 20px 0px 20px 0px;
   position: relative;
   text-align: left;
