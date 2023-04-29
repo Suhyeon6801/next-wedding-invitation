@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
           property="og:description"
           content="6월 10일 토요일 오후 1시 10분, 더 베네치아 3층 베네치아홀"
         />
-        <meta property="og:image" content="./meta.jpeg" />
+        <meta property="og:image" content="./meta.png" />
         <meta property="og:title" content="박동현, 박혜진 결혼합니다" />
         <meta
           property="og:url"
@@ -27,7 +27,7 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         {/* twitter open graph */}
         <meta name="twitter:title" content="박동현, 박혜진 결혼합니다" />
-        <meta name="twitter:image" content="./meta.jpeg" />
+        <meta name="twitter:image" content="./meta.png" />
         <meta
           name="twitter:url"
           content="https://next-wedding-invitation.vercel.app/"
