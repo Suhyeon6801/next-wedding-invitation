@@ -1,5 +1,5 @@
 function goToKakaoMap(latitude: number, longitude: number) {
-    const mapUrl = `https://map.kakao.com/link/map/${'경기 성남시 분당구 정자일로 95'}, ${latitude},${longitude}`;
+    const mapUrl = `https://map.kakao.com/link/map/${'서울 송파구 올림픽대로35다길 42'}, ${latitude},${longitude}`;
 
     window.open(`${mapUrl}`, '_blank');
 }
