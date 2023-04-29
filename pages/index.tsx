@@ -14,6 +14,7 @@ const IndexPage: NextPage = () => {
       <Photo />
       <MapInfo />
       <Account />
+      <Footer />
     </Background>
     </>
   );
@@ -26,7 +27,6 @@ const Background = styled.div`
   text-align: center;
   background-color: #ffffff;
   font-family: 'Nanum Myeongjo', serif;
-  position: relative;
 `;
 
 export default IndexPage;
