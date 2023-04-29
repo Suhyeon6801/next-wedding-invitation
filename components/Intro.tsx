@@ -97,7 +97,7 @@ const GreetingText = () => {
       </div>
       <div style={{ fontSize: '0.9em', marginBottom: '50px'}}>
         <p>"인생은 누구나 비슷한 길을 걸어간다.</p>
-        <p>결국엔 나이가 들어 지날을 추억하는 것일 뿐이다.</p>
+        <p>결국엔 나이가 들어 지난날을 추억하는 것일 뿐이다.</p>
         <p>그러니 결혼은 따뜻한 사람과 하거라."</p>
         <p> — 영화 '어바웃 타임' 中</p>
       </div>
@@ -145,7 +145,7 @@ const FlexContainer = styled.div`
 `;
 
 const Title = styled.h2`
-  margin: 40px 0px 50px 0px;
+  margin: 50px 0px 50px 0px;
 `;
 
 const TimeSpace = styled.div`
