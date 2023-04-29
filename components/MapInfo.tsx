@@ -3,14 +3,12 @@ import styled from '@emotion/styled';
 import Script from 'next/script';
 import { Map, MapMarker } from 'react-kakao-maps-sdk';
 
-const KAKAO_SDK_URL = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.KAKAO_APP_KEY}&autoload=false`;
+const KAKAO_SDK_URL = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.KAKAO_API_KEY}&autoload=false`;
 
 const Location = {
   lat: 37.5151343461444,
   lng: 127.10272871700069,
 }
-
-// urlX=522705&urlY=1115472
 
 export const MapInfo = () => {
   return (
