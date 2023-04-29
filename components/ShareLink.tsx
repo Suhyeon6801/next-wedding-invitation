@@ -5,7 +5,7 @@ import LINK from '@/public/images/external-link.png';
 import KAKAOTALK from '@/public/images/kakao-talk.png';
 
 export const ShareLink = () => {
-    const URL = window.location.href ?? 'https://donghyun-hyejin-wedding-card.vercel.app/';
+    const URL = 'https://donghyun-hyejin-wedding-card.vercel.app/';
     const kakaoKey = process.env.KAKAO_API_KEY;
 
     const handleShare = () => {
@@ -43,10 +43,10 @@ export const ShareLink = () => {
             },
             buttons: [
                 {
-                title: '자세히 보기',
-                link: {
-                    webUrl: URL,
-                },
+                    title: '자세히 보기',
+                    link: {
+                        webUrl: URL,
+                    },
                 },
             ],
         });

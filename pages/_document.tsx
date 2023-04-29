@@ -1,5 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document';
 
+// TODO: url이 정해지면 content 수정
 export default function Document() {
   return (
     <Html lang="en">
