@@ -1,25 +1,25 @@
 import Image from 'next/image'
 import styled from '@emotion/styled';
-import FRAME from '../public/images/frame.png'
+import FRAME from '@/public/images/frame.png'
 import MAIN from '@/public/images/wedding1.jpeg';
+import CALENDAR from '@/public/images/calendar.png';
+import LOCATION from '@/public/images/location.png';
 
 export const Intro = () => {
     return (
       <>
         <Header>유월의 웨딩마치</Header>  
         <TitleSection />
-        <PhotoContainer>
-          <Image 
-            src={MAIN}  
-            alt={'main'}
-            layout="responsive" 
-            style={{
-              width: '100vw',
-              height: '100vh',
-              objectFit: 'contain',
-            }}
-          /> 
-        </PhotoContainer>        
+        <Image 
+          src={MAIN}  
+          alt={'main'}
+          layout="responsive" 
+          style={{
+            width: '100vw',
+            height: '100vh',
+            objectFit: 'contain',
+          }}
+        />     
         <GreetingText />
         <TimeSpaceSection />
       </>
@@ -35,6 +35,7 @@ const TitleSection = () => {
           alt={'frame'} 
           style={{
             width: '100vw',
+            height: '50hw',
           }}/>
       </div>
       <FlexContainer>
@@ -47,9 +48,35 @@ const TitleSection = () => {
 const TimeSpaceSection = () => {
   return (
     <TimeSpace>
-      <div>2023.06.10 토요일 오후 1시 10분</div>
+      <div>
+        <Image 
+            src={CALENDAR} 
+            alt={'calendar'} 
+            style={{
+              verticalAlign: 'middle',
+              display: 'inline-block',
+              width: '1em',
+              height: '1em',
+              marginRight: '0.7em',
+              paddingBottom: '6px',
+          }}/>
+        2023.06.10 토요일 오후 1시 10분
+      </div>
       <br/>
-      <div>더 베네티아 3층 베네치아홀</div>
+      <div>
+        <Image 
+          src={LOCATION} 
+          alt={'location'} 
+          style={{
+            verticalAlign: 'middle',
+            display: 'inline-block',
+            width: '1em',
+            height: '1em',
+            marginRight: '0.7em',
+            paddingBottom: '6px',
+        }}/>
+        더 베네치아 3층 베네치아홀
+      </div>
     </TimeSpace>
   )
 }
@@ -58,14 +85,13 @@ const GreetingText = () => {
   return (
     <InfoText>
       <div style={{
-        margin: '10px 0px 50px 0px',
-        fontSize: '1.1em',
-        fontWeight: 'bold',
+        margin: '0px 0px 50px 0px',
+        fontSize: '1.8em',
         textDecoration: 'underline',
         textUnderlineOffset: '0.7em',
         textDecorationColor: '#C2B280'
       }}>
-        <p>
+        <p style={{ fontFamily: 'East Sea Dokdo' }}>
           동현 ♡ 혜진
         </p>
       </div>
@@ -101,8 +127,9 @@ const FromInfo = () => {
 
 const Header = styled.header`
   padding: 20px;
-  font-size: 1.2em;
-  font-stretch: 150%;
+  font-size: 1.5em;
+  font-stretch: 200%;
+  font-family: 'East Sea Dokdo', cursive;
   textDecoration: 'underline',
   textUnderlineOffset: '0.7em',
   textDecorationColor: '#C2B280'
@@ -118,24 +145,18 @@ const FlexContainer = styled.div`
 `;
 
 const Title = styled.h2`
-  margin: 40px 0px 50px 13px;
+  margin: 40px 0px 50px 0px;
 `;
-
-const PhotoContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`
 
 const TimeSpace = styled.div`
   padding: 0px 0px 0px 30px;
-  margin: 20px 0px 50px 0px;
+  margin: 35px 0px 80px 0px;
   text-align: left;
 `;
 
 const InfoText = styled.div`
   flex-wrap: wrap;
-  padding: 30px;
+  padding: 10px 0px 0px 30px;
   margin: 20px 0px 20px 0px;
   position: relative;
   text-align: left;

@@ -9,13 +9,13 @@ import styled from '@emotion/styled';
 const IndexPage: NextPage = () => {
   return (
     <>
-    <Background>
-      <Intro />
-      <Photo />
-      <MapInfo />
-      <Account />
-      <Footer />
-    </Background>
+      <Background>
+        <Intro />
+        <Photo />
+        <MapInfo />
+        <Account />
+        <Footer />
+      </Background>
     </>
   );
 }
