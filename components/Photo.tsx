@@ -1,21 +1,30 @@
 import styled from '@emotion/styled';
 import Image from 'next/image';
-import {CATS_IMAGES} from '@/public/images/images';
+import {VERTICAL_WEDDING_IMAGES, HORIZONTAL_WEDDING_IMAGES} from '@/public/images/images';
 
 export const Photo = () => {
     return (
       <>
         <h3
           style={{ 
-            borderRadius: '100px', 
             textAlign: 'center', 
-            margin: '30px' 
+            margin: '50px 0px 50px 0px',
+            fontSize: '1.1em',
+            fontWeight: 'bold',
+            textDecoration: 'underline',
+            textUnderlineOffset: '0.7em',
+            textDecorationColor: '#C2B280'
           }}>
           Album
         </h3>
         <VerticalContainer showSmallerImageOnMobile={false}>
-            {CATS_IMAGES.map((img, index) => (
-              <Image src={img} key={index} alt={'스튜디오 사진'} width={300} height={300}/>
+            {VERTICAL_WEDDING_IMAGES.map((img, index) => (
+              <Image src={img} key={index} alt={'스튜디오 사진'} width={500} height={500}/>
+            ))}
+        </VerticalContainer>
+        <VerticalContainer showSmallerImageOnMobile={false} style={{marginTop: '20px'}}>
+            {HORIZONTAL_WEDDING_IMAGES.map((img, index) => (
+              <Image src={img} key={index} alt={'스튜디오 사진'} width={800} height={500}/>
             ))}
         </VerticalContainer>
       </>
@@ -26,6 +35,7 @@ const VerticalContainer = styled.div`
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
+  margin: 1px;
   scroll-snap-type: x mandatory;
   > span {
     flex: 0 0 auto;

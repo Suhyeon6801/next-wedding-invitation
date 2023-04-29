@@ -6,16 +6,27 @@ import { Map, MapMarker } from 'react-kakao-maps-sdk';
 const KAKAO_SDK_URL = `//dapi.kakao.com/v2/maps/sdk.js?appkey=61020e30c2d3c34412987eaf7487a51d&autoload=false`;
 
 const Location = {
-  lat: 33.5563,
-  lng: 126.79581,
+  lat: 37.5151343461444,
+  lng: 127.10272871700069,
 }
+
+// urlX=522705&urlY=1115472
 
 export const MapInfo = () => {
   return (
     <>
-      <h3 style={{margin: '30px'}}>오시는 길</h3>
-      <div style={{marginBottom: '20px'}}>
-        경기 성남시 분당구 정자일로 95
+      <h3 style={{ 
+        margin: '50px 0px 50px 0px',
+        fontSize: '1.1em',
+        fontWeight: 'bold',
+        textDecoration: 'underline',
+        textUnderlineOffset: '0.7em',
+        textDecorationColor: '#C2B280'
+      }}>오시는 길</h3>
+      <div style={{ margin: '30px 0px 50px 0px '}}>
+        <p>더 베네치아</p>
+        <p>서울 송파구 올림픽대로35다길 42</p>
+        <p style={{ fontSize: '0.8em' }}>(TEL 02-6424-7000)</p>
       </div>
       <Script src={KAKAO_SDK_URL} strategy="beforeInteractive" />
       <Map
@@ -29,13 +40,30 @@ export const MapInfo = () => {
       />
       </Map>
       <GoToMap onClick={() => goToKakaoMap(Location.lat, Location.lng)}>지도 바로가기</GoToMap>
+      <WayGuide>
+        <div style={{ color: '#C2B280' }}>지하철</div>
+        <div style={{ fontSize: '0.9em' }}>
+          <p>2호선 잠실역 8번출구 하차 - 도보 2분거리</p>
+          <p>8호선 잠실역 9번출구 하차 - 도보 1분거리</p>
+        </div>
+        <br/>
+        <div style={{ color: '#C2B280' }}>주차장</div>
+        <div style={{ fontSize: '0.9em'}}>
+          <p>루터회관 지하주차장 이용 </p>
+          <p>(주차요원의 안내를 받으세요)</p>
+        </div>
+      </WayGuide>
     </>
   );
 }
 
 const GoToMap = styled.div`
   padding: 10px;
-  text-algin: center;
   color: #000;
-  background: #eedbdc;
+  background: #F0E0A8;
 `;
+
+const WayGuide = styled.div`
+  margin: 30px;
+  text-align: left;
+`

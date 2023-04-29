@@ -1,8 +1,17 @@
-import CAT1 from '../images/cat1.jpeg';
-import CAT2 from '../images/cat2.jpeg';
-import CAT3 from '../images/cat3.jpeg';
-import CAT4 from '../images/cat4.jpeg';
-import CAT5 from '../images/cat5.jpeg';
-import CAT6 from '../images/cat6.jpeg';
+import WEDDING1 from '@/public/images/wedding1.jpeg';
+import WEDDING2 from '@/public/images/wedding2.jpeg';
+import WEDDING3 from '@/public/images/wedding3.jpeg';
+import WEDDING4 from '@/public/images/wedding4.jpeg';
+import WEDDING5 from '@/public/images/wedding5.jpeg';
+import WEDDING6 from '@/public/images/wedding6.jpeg';
+import WEDDING7 from '@/public/images/wedding7.jpeg';
+import WEDDING8 from '@/public/images/wedding8.jpeg';
+import WEDDING9 from '@/public/images/wedding9.jpeg';
+import WEDDING10 from '@/public/images/wedding10.jpeg';
 
-export const CATS_IMAGES = [CAT1, CAT2, CAT3, CAT4, CAT5, CAT6];
+import WEDDING_HOR1 from '@/public/images/wedding_hor1.jpeg';
+import WEDDING_HOR2 from '@/public/images/wedding_hor2.jpeg';
+
+
+export const VERTICAL_WEDDING_IMAGES = [WEDDING2, WEDDING3, WEDDING4, WEDDING5, WEDDING6, WEDDING7, WEDDING8, WEDDING9, WEDDING10];
+export const HORIZONTAL_WEDDING_IMAGES = [WEDDING_HOR1, WEDDING_HOR2];

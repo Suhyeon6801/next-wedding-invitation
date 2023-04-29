@@ -1,15 +1,18 @@
+import React, { useState } from "react";
 import copyToClipboard from "@/utils/copyToClipboard";
 import styled from "@emotion/styled";
-import React, { useState } from "react";
 
 export const Account = () => {
 
     return (
         <div style={{paddingBottom: '30px'}}>
             <h3 style={{ 
-                color: '#E9B4B6',
-                margin: '50px 30px 20px 20px',
-                padding: '10px'
+                margin: '50px 0px 50px 0px',
+                padding: '10px',
+                fontSize: '1.1em',
+                textDecoration: 'underline',
+                textUnderlineOffset: '0.7em',
+                textDecorationColor: '#E1D098'
             }}>멀리서 마음 전하기</h3>
             <AccountBox 
                 title='신랑 측 계좌번호 보기' 
@@ -28,17 +31,17 @@ export const Account = () => {
                 contents={
                 <div>
                     <AccountInfo 
+                    name='이승현'
+                    bankName='신한은행'
+                    bankAccountNumber='110-452-885241'
+                    />
+                    <AccountInfo 
                     name='홍길동'
                     bankName='국민은행'
                     bankAccountNumber='123-456-789'
                     />
                     <AccountInfo 
-                    name='홍깅ㄹ동'
-                    bankName='국민은행'
-                    bankAccountNumber='123-456-789'
-                    />
-                    <AccountInfo 
-                    name='홍깅ㄹ동'
+                    name='홍길동'
                     bankName='국민은행'
                     bankAccountNumber='123-456-789'
                     />
@@ -89,7 +92,7 @@ const Container = styled.div`
   margin-right: 30px;
   padding: 10px 13px;
   cursor: pointer;
-  border: 1px solid #E9B4B6;
+  border: 1px solid #F0E0A8;
   border-radius: 2px;
 `;
 
@@ -115,7 +118,7 @@ const CopyButton = styled.p`
 color: #fff;
   text-align: left;
   background-color: #d5d5d5;
-  font-size: 0.5em;
+  font-size: 0.7em;
 padding: 8px 15px;
 margin-top: 30px;
 margin-bottom: 15px;

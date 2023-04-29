@@ -1,13 +1,11 @@
 import styled from '@emotion/styled';
 
 export const Footer = () => {
-  return <FooterCover>{'여기는 푸터죠'}</FooterCover>;
+  return  <FooterCover>소중한 분을 초대합니다</FooterCover>;
 }
 
-const FooterCover = styled.footer`
-  background: grey;
-  color: white;
-  padding: 24px;
-  display: flex;
-  justify-content: space-between;
-`;
+const FooterCover = styled.div`
+  margin: 20px 0px 0px 0px;
+  padding: 25px;
+  background-color: #f5f5f5;
+`
