@@ -5,7 +5,7 @@ import LINK from '@/public/images/external-link.png';
 import KAKAOTALK from '@/public/images/kakao-talk.png';
 
 export const ShareLink = () => {
-    const URL = 'https://next-wedding-invitation.vercel.app/';
+    const URL = window.location.href ?? 'https://donghyun-hyejin-wedding-card.vercel.app/';
     const kakaoKey = process.env.KAKAO_API_KEY;
 
     const handleShare = () => {
@@ -35,17 +35,17 @@ export const ShareLink = () => {
             content: {
                 title: "박동현, 박혜진 결혼합니다",
                 description: "6월 10일 토요일 오후 1시 10분 \n더 베네치아 3층 베네치아홀",
-                imageUrl: window.location.href + 'meta.png',
+                imageUrl: URL + 'meta.png',
                 link: {
-                    mobileWebUrl: window.location.href,
-                    webUrl: window.location.href,
+                    mobileWebUrl: URL,
+                    webUrl: URL,
                 },
             },
             buttons: [
                 {
                 title: '자세히 보기',
                 link: {
-                    webUrl: window.location.href,
+                    webUrl: URL,
                 },
                 },
             ],
