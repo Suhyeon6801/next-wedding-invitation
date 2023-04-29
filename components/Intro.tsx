@@ -1,23 +1,12 @@
-import React from 'react';
 import Image from 'next/image'
 import styled from '@emotion/styled';
-import CAT7 from '../public/images/cat7.jpeg';
-import FLOWER from '../public/images/flower.png'
+import FRAME from '../public/images/frame.png'
 import MAIN from '@/public/images/wedding1.jpeg';
 
 export const Intro = () => {
     return (
       <>
-      <Image 
-        src={FLOWER} 
-        alt={'image1'} 
-        style={{
-          display: 'flex', 
-          objectFit:'contain',
-          margin: 'auto',
-          paddingTop: '15px',
-      }}/>
-        <Header>결혼합니다</Header>  
+        <Header>유월의 웨딩마치</Header>  
         <TitleSection />
         <PhotoContainer>
           <Image 
@@ -39,7 +28,19 @@ export const Intro = () => {
 
 const TitleSection = () => {
   return (
-    <Title>박동현 • 박혜진</Title>
+    <>
+      <div style={{ objectFit: 'cover', position: 'absolute', zIndex: -1 }}>
+        <Image 
+          src={FRAME} 
+          alt={'frame'} 
+          style={{
+            width: '100vw',
+          }}/>
+      </div>
+      <FlexContainer>
+        <Title>박동현 & 박혜진</Title>
+      </FlexContainer>
+    </>
   )
 }
 
@@ -64,7 +65,9 @@ const GreetingText = () => {
         textUnderlineOffset: '0.7em',
         textDecorationColor: '#C2B280'
       }}>
-        <p>동현  💐  혜진</p>
+        <p>
+          동현 ♡ 혜진
+        </p>
       </div>
       <div style={{ fontSize: '0.9em', marginBottom: '50px'}}>
         <p>"인생은 누구나 비슷한 길을 걸어간다.</p>
@@ -90,8 +93,8 @@ const GreetingText = () => {
 const FromInfo = () => {
   return (
     <InfoText>
-      <h3>000, 000 장남 박동현</h3>
-      <h3>ㅁㅁㅁ, ㅁㅁㅁ 장녀 박혜진</h3>
+      <h3>신랑 박동현</h3>
+      <h3>신부 박혜진</h3>
     </InfoText>
   )
 }
@@ -100,11 +103,22 @@ const Header = styled.header`
   padding: 20px;
   font-size: 1.2em;
   font-stretch: 150%;
-  font-family: cursive;
+  textDecoration: 'underline',
+  textUnderlineOffset: '0.7em',
+  textDecorationColor: '#C2B280'
 `;
 
-const Title = styled.h1`
-  margin: 30px;
+const FlexContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+`;
+
+const Title = styled.h2`
+  margin: 40px 0px 50px 13px;
 `;
 
 const PhotoContainer = styled.div`
@@ -122,6 +136,7 @@ const TimeSpace = styled.div`
 const InfoText = styled.div`
   flex-wrap: wrap;
   padding: 30px;
+  margin: 20px 0px 20px 0px;
   position: relative;
   text-align: left;
 `;

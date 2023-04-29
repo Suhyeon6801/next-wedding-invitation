@@ -21,11 +21,9 @@ const IndexPage: NextPage = () => {
 }
 
 const Background = styled.div`
-  display: absolute;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #ffffff;
   font-family: 'Nanum Myeongjo', serif;
 `;
 
