@@ -4,6 +4,7 @@ import FRAME from '@/public/images/frame.png'
 import MAIN from '@/public/images/wedding1.jpeg';
 import CALENDAR from '@/public/images/calendar.png';
 import LOCATION from '@/public/images/location.png';
+import HEART from '@/public/images/heart.png';
 
 export const Intro = () => {
     return (
@@ -39,7 +40,21 @@ const TitleSection = () => {
           }}/>
       </div>
       <FlexContainer>
-        <Title>박동현 & 박혜진</Title>
+        <Title>
+          박동현 
+          <Image 
+            src={HEART} 
+            alt={'haert'} 
+            style={{
+              verticalAlign: 'middle',
+              display: 'inline-block',
+              width: '1em',
+              height: '1em',
+              marginLeft: '0.5em',
+              marginRight: '0.5em',
+              paddingBottom: '5px',
+          }}/>
+          박혜진</Title>
       </FlexContainer>
     </>
   )
@@ -144,8 +159,9 @@ const FlexContainer = styled.div`
   text-align: center;
 `;
 
-const Title = styled.h2`
+const Title = styled.h3`
   margin: 50px 0px 50px 0px;
+  font-weight: normal;
 `;
 
 const TimeSpace = styled.div`
