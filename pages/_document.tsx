@@ -22,7 +22,7 @@ export default function Document() {
           name="twitter:url"
           content="https://next-wedding-invitation.vercel.app/"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <body style={{margin: '0px', padding: '0px'}}>
         <Main />
