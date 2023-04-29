@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
             property="og:description"
             content="6월 10일 토요일 오후 1시 10분, 더 베네치아 3층 베네치아홀"
           />
-          <meta property="og:image" content={"https://next-wedding-invitation.vercel.app//meta.jpeg"} />
+          <meta property="og:image" content={"https://next-wedding-invitation.vercel.app/meta.jpeg"} />
           <meta property="og:title" content="박동현, 박혜진 결혼합니다" />
           <meta
             property="og:url"
