@@ -14,6 +14,8 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
      <Head>
+        <title>박동현, 박혜진 결혼합니다</title>
+        <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="6월 10일 토요일 오후 1시 10분, 더 베네치아 3층 베네치아홀" />
         <meta
           property="og:description"
