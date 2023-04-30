@@ -1,11 +1,17 @@
 import { Html, Head, Main, NextScript } from 'next/document';
+import Script from 'next/script';
+
+const KAKAO_SDK_URL = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.KAKAO_API_KEY}&autoload=false`;
 
 // TODO: url이 정해지면 content 수정
 export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <meta name="description" content="6월 10일 토요일 오후 1시 10분, 더 베네치아 3층 베네치아홀" />
+        <meta
+          name="description"
+          content="6월 10일 토요일 오후 1시 10분, 더 베네치아 3층 베네치아홀"
+        />
         <meta
           property="og:description"
           content="6월 10일 토요일 오후 1시 10분, 더 베네치아 3층 베네치아홀"
@@ -24,8 +30,9 @@ export default function Document() {
           content="https://next-wedding-invitation.vercel.app/"
         />
         <link rel="icon" href="/favicon.png" />
+        <Script src={KAKAO_SDK_URL} strategy="beforeInteractive" />
       </Head>
-      <body style={{margin: '0px', padding: '0px'}}>
+      <body style={{ margin: '0px', padding: '0px' }}>
         <Main />
         <NextScript />
       </body>

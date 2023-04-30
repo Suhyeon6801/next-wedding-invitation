@@ -2,7 +2,7 @@ import type { AppProps } from 'next/app';
 import { Global, css } from '@emotion/react';
 import Head from 'next/head';
 
-const GlobalFontStyle =  css`
+const GlobalFontStyle = css`
   @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
 
   body {

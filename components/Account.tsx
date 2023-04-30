@@ -1,89 +1,104 @@
-import React, { useState } from "react";
-import copyToClipboard from "@/utils/copyToClipboard";
-import styled from "@emotion/styled";
+import React, { useState } from 'react';
+import copyToClipboard from '@/utils/copyToClipboard';
+import styled from '@emotion/styled';
 
 export const Account = () => {
-
-    return (
-        <div style={{paddingBottom: '30px'}}>
-            <h3 style={{ 
-                margin: '50px 0px 50px 0px',
-                padding: '10px',
-                fontSize: '1.1em',
-                textDecoration: 'underline',
-                textUnderlineOffset: '0.7em',
-                textDecorationColor: '#E1D098'
-            }}>멀리서 마음 전하기</h3>
-            <AccountBox 
-                title='신랑 측 계좌번호 보기' 
-                contents={
-                    <div>
-                    <AccountInfo 
-                        name='홍길동'
-                        bankName='국민은행'
-                        bankAccountNumber='123-456-789'
-                    />
-                    </div>
-            }/>     
-            <br/>
-            <AccountBox 
-                title='신부 측 계좌번호 보기' 
-                contents={
-                <div>
-                    <AccountInfo 
-                    name='이승현'
-                    bankName='신한은행'
-                    bankAccountNumber='110-452-885241'
-                    />
-                    <AccountInfo 
-                    name='홍길동'
-                    bankName='국민은행'
-                    bankAccountNumber='123-456-789'
-                    />
-                    <AccountInfo 
-                    name='홍길동'
-                    bankName='국민은행'
-                    bankAccountNumber='123-456-789'
-                    />
-                </div>
-        }/>
+  return (
+    <div style={{ paddingBottom: '30px' }}>
+      <h3
+        style={{
+          margin: '50px 0px 50px 0px',
+          padding: '10px',
+          fontSize: '1.1em',
+          textDecoration: 'underline',
+          textUnderlineOffset: '0.7em',
+          textDecorationColor: '#E1D098',
+        }}
+      >
+        멀리서 마음 전하기
+      </h3>
+      <AccountBox
+        title="신랑 측 계좌번호 보기"
+        contents={
+          <div>
+            <AccountInfo
+              name="홍길동"
+              bankName="국민은행"
+              bankAccountNumber="123-456-789"
+            />
+          </div>
+        }
+      />
+      <br />
+      <AccountBox
+        title="신부 측 계좌번호 보기"
+        contents={
+          <div>
+            <AccountInfo
+              name="이승현"
+              bankName="신한은행"
+              bankAccountNumber="110-452-885241"
+            />
+            <AccountInfo
+              name="홍길동"
+              bankName="국민은행"
+              bankAccountNumber="123-456-789"
+            />
+            <AccountInfo
+              name="홍길동"
+              bankName="국민은행"
+              bankAccountNumber="123-456-789"
+            />
+          </div>
+        }
+      />
     </div>
-    )
-}
+  );
+};
 
-const AccountBox = ({title, contents}:{title: string; contents: React.ReactNode}) => {
-    const [collapsed, setCollapsed] = useState(true);
-    return (
-        <Container>
-            <div onClick={() => setCollapsed(prev => !prev)}>{title}</div>
-            {!collapsed && <Contents>{contents}</Contents>}
-        </Container>
-    )
-}
-
-
-const AccountInfo = ({bankName, bankAccountNumber, name}:{
-    bankName: string;
-    bankAccountNumber: string;
-    name: string;
+const AccountBox = ({
+  title,
+  contents,
+}: {
+  title: string;
+  contents: React.ReactNode;
 }) => {
-    const copyAccounNumberToClipBoard = () => copyToClipboard(bankAccountNumber, () => {
-        alert(`${name} 님의 ${bankName} 계좌번호를 복사했습니다. `);
+  const [collapsed, setCollapsed] = useState(true);
+  return (
+    <Container>
+      <div onClick={() => setCollapsed(prev => !prev)}>{title}</div>
+      {!collapsed && <Contents>{contents}</Contents>}
+    </Container>
+  );
+};
+
+const AccountInfo = ({
+  bankName,
+  bankAccountNumber,
+  name,
+}: {
+  bankName: string;
+  bankAccountNumber: string;
+  name: string;
+}) => {
+  const copyAccounNumberToClipBoard = () =>
+    copyToClipboard(bankAccountNumber, () => {
+      alert(`${name} 님의 ${bankName} 계좌번호를 복사했습니다. `);
     });
 
-    return(
-        <InfoContainer onClick={copyAccounNumberToClipBoard} >
-            <Text>
-                <p>
-                    <span>{bankName} </span>
-                    <span>{bankAccountNumber}</span>
-                </p>
-                <span>{name}</span>
-            </Text>
-            <CopyButton>복사</CopyButton>
-        </InfoContainer>
-    )
-}
+  return (
+    <InfoContainer onClick={copyAccounNumberToClipBoard}>
+      <Text>
+        <p>
+          <span>{bankName} </span>
+          <span>{bankAccountNumber}</span>
+        </p>
+        <span>{name}</span>
+      </Text>
+      <CopyButton>복사</CopyButton>
+    </InfoContainer>
+  );
+};
 
 const Container = styled.div`
   border-radius: 6px;
@@ -92,7 +107,7 @@ const Container = styled.div`
   margin-right: 30px;
   padding: 10px 13px;
   cursor: pointer;
-  border: 1px solid #F0E0A8;
+  border: 1px solid #f0e0a8;
   border-radius: 2px;
 `;
 
@@ -115,14 +130,14 @@ const Text = styled.p`
 `;
 
 const CopyButton = styled.p`
-color: #fff;
+  color: #fff;
   text-align: left;
   background-color: #d5d5d5;
   font-size: 0.7em;
-padding: 8px 15px;
-margin-top: 30px;
-margin-bottom: 15px;
-border-radius: 3px;
-line-height: 20px;
-cursor: pointer;
+  padding: 8px 15px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  line-height: 20px;
+  cursor: pointer;
 `;
