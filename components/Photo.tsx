@@ -29,6 +29,7 @@ export const Photo = () => {
             alt={'스튜디오 사진'}
             width={500}
             height={500}
+            loading="lazy"
           />
         ))}
       </VerticalContainer>
@@ -43,6 +44,7 @@ export const Photo = () => {
             alt={'스튜디오 사진'}
             width={800}
             height={500}
+            loading="lazy"
           />
         ))}
       </VerticalContainer>

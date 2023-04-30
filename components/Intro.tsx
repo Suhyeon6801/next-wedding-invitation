@@ -20,6 +20,7 @@ export const Intro = () => {
           height: '100vh',
           objectFit: 'contain',
         }}
+        loading="lazy"
       />
       <GreetingText />
       <TimeSpaceSection />
