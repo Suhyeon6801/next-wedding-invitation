@@ -1,19 +1,19 @@
 import type { AppProps } from 'next/app';
-import { Global, css } from '@emotion/react';
+import { Global } from '@emotion/react';
 import Head from 'next/head';
 
-const GlobalFontStyle = css`
+const GlobalFontStyle = `
   @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
-
-  body {
-    font-family: 'East Sea Dokdo', cursive;
-  }
 
   @font-face {
     font-family: 'Nanum Myeongjo';
-    src: url('/fonts/NanumMyeongjo-Regular.ttf') format('ttf');
+    src: url('/fonts/NanumMyeongjo-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+  }
+
+  body {
+    font-family: 'Nanum Myeongjo', serif;
   }
 `;
 
