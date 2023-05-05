@@ -8,6 +8,13 @@ const GlobalFontStyle = css`
   body {
     font-family: 'East Sea Dokdo', cursive;
   }
+
+  @font-face {
+    font-family: 'Nanum Myeongjo';
+    src: url('/fonts/NanumMyeongjo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 `;
 
 export default function App({ Component, pageProps }: AppProps) {
