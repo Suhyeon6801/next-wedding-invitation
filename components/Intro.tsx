@@ -138,7 +138,28 @@ const GreetingText = () => {
           color: '#C2B280',
         }}
       >
-        동현, 혜진 올림
+        <p>
+          <span>박일한•이기영 </span>
+          <span
+            style={{
+              fontSize: '0.7em',
+            }}
+          >
+            의 장남{' '}
+          </span>
+          <span>동현</span>
+        </p>
+        <p>
+          <span>박건영•박은숙 </span>
+          <span
+            style={{
+              fontSize: '0.7em',
+            }}
+          >
+            의 장녀{' '}
+          </span>
+          <span>혜진</span>
+        </p>
       </div>
     </InfoText>
   );
