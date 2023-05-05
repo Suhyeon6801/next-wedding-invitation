@@ -28,8 +28,8 @@ export const Photo = () => {
             src={FINTER_SWIPE}
             alt={'swipe'}
             style={{
-              width: '45px',
-              height: '45px',
+              width: '30px',
+              height: '30px',
               margin: '0px 0px 4px 0px ',
             }}
           />
@@ -57,8 +57,8 @@ export const Photo = () => {
             src={FINTER_SWIPE}
             alt={'swipe'}
             style={{
-              width: '45px',
-              height: '45px',
+              width: '30px',
+              height: '30px',
               margin: '0px 0px 4px 0px ',
             }}
           />
@@ -110,8 +110,8 @@ const DragBox = styled.div`
   font-size: 0.7em;
   padding: 10px;
   border-radius: 5px;
-  width: 123px;
-  height: 45px;
+  width: 110px;
+  height: 30px;
   right: 12px;
   margin-top: 17px;
   align-items: center;
