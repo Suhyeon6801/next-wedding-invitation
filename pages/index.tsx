@@ -34,7 +34,6 @@ const IndexPage: NextPage = () => {
         <ShareLink />
         <Credit />
       </Background>
-
     </>
   );
 };
