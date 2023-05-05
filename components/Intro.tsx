@@ -184,8 +184,9 @@ const FlexContainer = styled.div`
   text-align: center;
 `;
 
-const Title = styled.div`
+const Title = styled.h2`
   margin: 50px 0px 50px 0px;
+  font-weight: normal;
 `;
 
 const TimeSpace = styled.div`
