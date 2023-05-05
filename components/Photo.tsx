@@ -48,7 +48,7 @@ export const Photo = () => {
           />
         ))}
       </VerticalContainer>
-      {/* <VerticalContainer
+      <VerticalContainer
         showSmallerImageOnMobile={true}
         style={{ marginTop: '20px' }}
       >
@@ -76,7 +76,7 @@ export const Photo = () => {
             loading="lazy"
           />
         ))}
-      </VerticalContainer> */}
+      </VerticalContainer>
     </>
   );
 };
