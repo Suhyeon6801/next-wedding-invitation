@@ -10,7 +10,6 @@ export const Intro = () => {
   return (
     <>
       <Header>유월의 웨딩마치</Header>
-
       <Image src={MAIN} alt={'main'} layout="responsive" loading="lazy" />
       <GreetingText />
       <TimeSpaceSection />
@@ -98,9 +97,9 @@ const GreetingText = () => {
               fontSize: '0.7em',
             }}
           >
-            의 장남{' '}
+            의 장남
           </span>
-          <span>동현</span>
+          <span> 동현</span>
         </p>
         <p>
           <span>박건영 • 박은숙 </span>
@@ -109,9 +108,9 @@ const GreetingText = () => {
               fontSize: '0.7em',
             }}
           >
-            의 장녀{' '}
+            의 장녀
           </span>
-          <span>혜진</span>
+          <span> 혜진</span>
         </p>
       </div>
     </InfoText>
@@ -135,7 +134,7 @@ const TimeSpace = styled.div`
 `;
 
 const InfoText = styled.div`
-  flex-wrap: wrap;
+  display: flex-wrap;
   padding: 10px 30px 0px 30px;
   margin: 20px 0px 20px 0px;
   position: relative;

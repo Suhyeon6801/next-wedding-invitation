@@ -124,7 +124,7 @@ const InfoContainer = styled.div`
   align-items: center;
 `;
 
-const Text = styled.p`
+const Text = styled.div`
   text-align: left;
   maring-left: 10px;
 `;
