@@ -7,6 +7,7 @@ import { MapInfo } from '@/components/MapInfo';
 import styled from '@emotion/styled';
 import { ShareLink } from '@/components/ShareLink';
 import { useEffect } from 'react';
+import { Credit } from '@/components/Credit';
 
 const IndexPage: NextPage = () => {
   useEffect(() => {
@@ -30,6 +31,7 @@ const IndexPage: NextPage = () => {
         <Account />
         <Footer />
         <ShareLink />
+        <Credit />
       </Background>
     </>
   );

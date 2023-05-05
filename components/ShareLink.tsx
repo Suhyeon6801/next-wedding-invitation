@@ -3,7 +3,6 @@ import Image from 'next/image';
 import copyToClipboard from '@/utils/copyToClipboard';
 import LINK from '@/public/images/external-link.png';
 import KAKAOTALK from '@/public/images/kakao-talk.png';
-import { Credit } from './Credit';
 
 export const ShareLink = () => {
   const URL = 'https://donghyun-hyejin-wedding-card.vercel.app/';
@@ -93,7 +92,6 @@ export const ShareLink = () => {
           청첩장 주소 복사하기
         </div>
       </ShareLinkContent>
-      <Credit />
     </>
   );
 };
