@@ -139,7 +139,7 @@ const GreetingText = () => {
         }}
       >
         <p>
-          <span>박일한•이기영 </span>
+          <span>박일한 • 이기영 </span>
           <span
             style={{
               fontSize: '0.7em',
@@ -150,7 +150,7 @@ const GreetingText = () => {
           <span>동현</span>
         </p>
         <p>
-          <span>박건영•박은숙 </span>
+          <span>박건영 • 박은숙 </span>
           <span
             style={{
               fontSize: '0.7em',
