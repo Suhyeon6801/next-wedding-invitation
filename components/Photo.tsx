@@ -27,8 +27,8 @@ export const Photo = () => {
             src={img}
             key={index}
             alt={'스튜디오 사진'}
-            width={450}
-            height={450}
+            width={400}
+            height={400}
             loading="lazy"
           />
         ))}
@@ -42,8 +42,8 @@ export const Photo = () => {
             src={img}
             key={index}
             alt={'스튜디오 사진'}
-            width={720}
-            height={450}
+            width={650}
+            height={400}
             loading="lazy"
           />
         ))}
