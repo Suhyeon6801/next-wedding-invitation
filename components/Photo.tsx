@@ -4,6 +4,7 @@ import {
   VERTICAL_WEDDING_IMAGES,
   HORIZONTAL_WEDDING_IMAGES,
 } from '@/public/images/images';
+import FINTER_SWIPE from '@/public/images/swipe.png';
 
 export const Photo = () => {
   return (
@@ -21,29 +22,57 @@ export const Photo = () => {
       >
         Album
       </h3>
-      <VerticalContainer showSmallerImageOnMobile={false}>
+      <VerticalContainer showSmallerImageOnMobile={true}>
+        <DragBox>
+          <Image
+            src={FINTER_SWIPE}
+            alt={'swipe'}
+            style={{
+              width: '45px',
+              height: '45px',
+              margin: '0px 0px 4px 0px ',
+            }}
+          />
+          <p>
+            밀어서 더 많은 <br /> 사진 보기
+          </p>
+        </DragBox>
         {VERTICAL_WEDDING_IMAGES.map((img, index) => (
           <Image
             src={img}
             key={index}
             alt={'스튜디오 사진'}
-            width={400}
-            height={400}
+            width={500}
+            height={500}
             loading="lazy"
           />
         ))}
       </VerticalContainer>
       <VerticalContainer
-        showSmallerImageOnMobile={false}
+        showSmallerImageOnMobile={true}
         style={{ marginTop: '20px' }}
       >
+        <DragBox>
+          <Image
+            src={FINTER_SWIPE}
+            alt={'swipe'}
+            style={{
+              width: '45px',
+              height: '45px',
+              margin: '0px 0px 4px 0px ',
+            }}
+          />
+          <p>
+            밀어서 더 많은 <br /> 사진 보기
+          </p>
+        </DragBox>
         {HORIZONTAL_WEDDING_IMAGES.map((img, index) => (
           <Image
             src={img}
             key={index}
             alt={'스튜디오 사진'}
-            width={650}
-            height={400}
+            width={800}
+            height={500}
             loading="lazy"
           />
         ))}
@@ -70,4 +99,21 @@ const VerticalContainer = styled.div`
     }
     scroll-snap-align: start;
   }
+`;
+
+const DragBox = styled.div`
+  display: flex;
+  flex: right;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  font-size: 0.7em;
+  padding: 10px;
+  border-radius: 5px;
+  width: 123px;
+  height: 45px;
+  right: 12px;
+  margin-top: 17px;
+  align-items: center;
+  justify-content: space-between;
 `;
