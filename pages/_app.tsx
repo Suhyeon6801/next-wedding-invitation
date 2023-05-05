@@ -11,7 +11,7 @@ const GlobalFontStyle = css`
 
   @font-face {
     font-family: 'Nanum Myeongjo';
-    src: url('/fonts/NanumMyeongjo-Regular.ttf') format('truetype');
+    src: url('/fonts/NanumMyeongjo-Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
   }
