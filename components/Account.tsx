@@ -22,9 +22,9 @@ export const Account = () => {
         contents={
           <div>
             <AccountInfo
-              name="홍길동"
+              name="박동현"
               bankName="국민은행"
-              bankAccountNumber="123-456-789"
+              bankAccountNumber="536202-01-654576"
             />
           </div>
         }
@@ -35,19 +35,19 @@ export const Account = () => {
         contents={
           <div>
             <AccountInfo
-              name="이승현"
-              bankName="신한은행"
-              bankAccountNumber="110-452-885241"
+              name="박건영"
+              bankName="국민은행"
+              bankAccountNumber="462201-01-059279"
             />
             <AccountInfo
-              name="홍길동"
+              name="박은숙"
               bankName="국민은행"
-              bankAccountNumber="123-456-789"
+              bankAccountNumber="051-21-0972-480"
             />
             <AccountInfo
-              name="홍길동"
+              name="박혜진"
               bankName="국민은행"
-              bankAccountNumber="123-456-789"
+              bankAccountNumber="462202-01-344194"
             />
           </div>
         }
