@@ -1,5 +1,8 @@
 import goToKakaoMap from '@/utils/goToKakaoMap';
 import styled from '@emotion/styled';
+import Image from 'next/image';
+import SUBWAY from '@/public/images/subway.png';
+import PARKING from '@/public/images/parking.png';
 import { Map, MapMarker } from 'react-kakao-maps-sdk';
 
 const Location = {
@@ -41,13 +44,43 @@ export const MapInfo = () => {
         지도 바로가기
       </GoToMap>
       <WayGuide>
-        <div style={{ color: '#C2B280' }}>지하철</div>
+        
+        <div style={{ color: '#C2B280' }}>
+          <Image
+            src={SUBWAY}
+            alt={'subway'}
+            style={{
+              verticalAlign: 'middle',
+              display: 'inline-block',
+              width: '1em',
+              height: '1em',
+              marginRight: '0.7em',
+              paddingBottom: '6px',
+            }}
+          />
+          지하철
+        </div>
         <div style={{ fontSize: '0.9em' }}>
           <p>2호선 잠실역 8번출구 하차 - 도보 2분거리</p>
           <p>8호선 잠실역 9번출구 하차 - 도보 1분거리</p>
         </div>
         <br />
-        <div style={{ color: '#C2B280' }}>주차장</div>
+       
+        <div style={{ color: '#C2B280' }}>
+          <Image
+            src={PARKING}
+            alt={'parking'}
+            style={{
+              verticalAlign: 'middle',
+              display: 'inline-block',
+              width: '1em',
+              height: '1em',
+              marginRight: '0.7em',
+              paddingBottom: '6px',
+            }}
+          />
+          주차장
+        </div>
         <div style={{ fontSize: '0.9em' }}>
           <p>루터회관 지하주차장 이용 </p>
           <p>(주차요원의 안내를 받으세요)</p>
