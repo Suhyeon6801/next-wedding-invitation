@@ -8,7 +8,6 @@ import styled from '@emotion/styled';
 import { ShareLink } from '@/components/ShareLink';
 import { useEffect } from 'react';
 import { Credit } from '@/components/Credit';
-import { TitleSection } from '@/components/TitleSection';
 const IndexPage: NextPage = () => {
   useEffect(() => {
     const script = document.createElement('script');
@@ -30,7 +29,6 @@ const IndexPage: NextPage = () => {
         <MapInfo />
         <Account />
         <Footer />
-        <TitleSection />
         <ShareLink />
         <Credit />
       </Background>
