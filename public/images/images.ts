@@ -1,16 +1,16 @@
-import WEDDING1 from '@/public/images/wedding1.jpeg';
-import WEDDING2 from '@/public/images/wedding2.jpeg';
-import WEDDING3 from '@/public/images/wedding3.jpeg';
-import WEDDING4 from '@/public/images/wedding4.jpeg';
-import WEDDING5 from '@/public/images/wedding5.jpeg';
-import WEDDING6 from '@/public/images/wedding6.jpeg';
-import WEDDING7 from '@/public/images/wedding7.jpeg';
-import WEDDING8 from '@/public/images/wedding8.jpeg';
-import WEDDING9 from '@/public/images/wedding9.jpeg';
-import WEDDING10 from '@/public/images/wedding10.jpeg';
+import WEDDING1 from '@/public/images/wedding1.jpg';
+import WEDDING2 from '@/public/images/wedding2.jpg';
+import WEDDING3 from '@/public/images/wedding3.jpg';
+import WEDDING4 from '@/public/images/wedding4.jpg';
+import WEDDING5 from '@/public/images/wedding5.jpg';
+import WEDDING6 from '@/public/images/wedding6.jpg';
+import WEDDING7 from '@/public/images/wedding7.jpg';
+import WEDDING8 from '@/public/images/wedding8.jpg';
+import WEDDING9 from '@/public/images/wedding9.jpg';
+import WEDDING10 from '@/public/images/wedding10.jpg';
 
-import WEDDING_HOR1 from '@/public/images/wedding_hor1.jpeg';
-import WEDDING_HOR2 from '@/public/images/wedding_hor2.jpeg';
+import WEDDING_HOR1 from '@/public/images/wedding_hor1.jpg';
+import WEDDING_HOR2 from '@/public/images/wedding_hor2.jpg';
 
 
 export const VERTICAL_WEDDING_IMAGES = [WEDDING2, WEDDING3, WEDDING4, WEDDING5, WEDDING6, WEDDING7, WEDDING8, WEDDING9, WEDDING10];

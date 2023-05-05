@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import styled from '@emotion/styled';
 import FRAME from '@/public/images/frame.png';
-import MAIN from '@/public/images/wedding1.jpeg';
+import MAIN from '@/public/images/wedding1.jpg';
 import CALENDAR from '@/public/images/calendar.png';
 import LOCATION from '@/public/images/location.png';
 
@@ -42,7 +42,7 @@ const TitleSection = () => {
         />
       </div>
       <FlexContainer>
-        <Title>박동현 & 박혜진</Title>
+        <Title>박동현 ♡ 박혜진</Title>
       </FlexContainer>
     </>
   );
