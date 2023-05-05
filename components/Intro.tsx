@@ -10,70 +10,13 @@ export const Intro = () => {
   return (
     <>
       <Header>유월의 웨딩마치</Header>
-      {/* <TitleSection /> */}
-      <Image
-        src={MAIN}
-        alt={'main'}
-        layout="responsive"
-        style={{
-          width: '100vw',
-          height: '100vh',
-          objectFit: 'contain',
-        }}
-        loading="lazy"
-      />
-      {/* <Image
-        src={WEDDING1}
-        alt={'main'}
-        layout="responsive"
-        style={{
-          width: '400px',
-          height: '400px',
-          objectFit: 'contain',
-        }}
-        loading="lazy"
-      /> */}
+
+      <Image src={MAIN} alt={'main'} layout="responsive" loading="lazy" />
       <GreetingText />
       <TimeSpaceSection />
     </>
   );
 };
-
-// const TitleSection = () => {
-//   return (
-//     <>
-//       {/* <div style={{ objectFit: 'cover', position: 'absolute', zIndex: -1 }}>
-//         <Image
-//           src={FRAME}
-//           alt={'frame'}
-//           style={{
-//             width: '100vw',
-//             height: '50hw',
-//           }}
-//         />
-//       </div> */}
-//       <FlexContainer>
-//         <Title>
-//           박동현
-//           <Image
-//             src={HEART}
-//             alt={'heart'}
-//             style={{
-//               verticalAlign: 'middle',
-//               display: 'inline-block',
-//               width: '1em',
-//               height: '1em',
-//               marginLeft: '0.5em',
-//               marginRight: '0.5em',
-//               paddingBottom: '5px',
-//             }}
-//           />{' '}
-//           박혜진
-//         </Title>
-//       </FlexContainer>
-//     </>
-//   );
-// };
 
 const TimeSpaceSection = () => {
   return (
@@ -183,20 +126,6 @@ const Header = styled.header`
   textDecoration: 'underline',
   textUnderlineOffset: '0.7em',
   textDecorationColor: '#C2B280'
-`;
-
-const FlexContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  justify-content: center;
-  text-align: center;
-`;
-
-const Title = styled.h2`
-  margin: 50px 0px 50px 0px;
-  font-weight: normal;
 `;
 
 const TimeSpace = styled.div`

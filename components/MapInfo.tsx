@@ -44,7 +44,6 @@ export const MapInfo = () => {
         지도 바로가기
       </GoToMap>
       <WayGuide>
-        
         <div style={{ color: '#C2B280' }}>
           <Image
             src={SUBWAY}
@@ -54,7 +53,7 @@ export const MapInfo = () => {
               display: 'inline-block',
               width: '1em',
               height: '1em',
-              marginRight: '0.7em',
+              marginRight: '0.5em',
               paddingBottom: '6px',
             }}
           />
@@ -65,7 +64,7 @@ export const MapInfo = () => {
           <p>8호선 잠실역 9번출구 하차 - 도보 1분거리</p>
         </div>
         <br />
-       
+
         <div style={{ color: '#C2B280' }}>
           <Image
             src={PARKING}
@@ -75,7 +74,7 @@ export const MapInfo = () => {
               display: 'inline-block',
               width: '1em',
               height: '1em',
-              marginRight: '0.7em',
+              marginRight: '0.5em',
               paddingBottom: '6px',
             }}
           />
