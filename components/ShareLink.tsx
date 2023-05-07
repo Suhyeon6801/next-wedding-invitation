@@ -39,7 +39,7 @@ export const ShareLink = () => {
         title: '박동현, 박혜진 결혼합니다',
         description:
           '6월 10일 토요일 오후 1시 10분 \n더 베네치아 3층 베네치아홀',
-        imageUrl: MainUrl + 'meta.png',
+        imageUrl: MainUrl + '/meta.png',
         link: {
           mobileWebUrl: URL,
           webUrl: URL,
