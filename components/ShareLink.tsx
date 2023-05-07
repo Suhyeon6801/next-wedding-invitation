@@ -3,9 +3,11 @@ import Image from 'next/image';
 import copyToClipboard from '@/utils/copyToClipboard';
 import LINK from '@/public/images/external-link.png';
 import KAKAOTALK from '@/public/images/kakao-talk.png';
+import { useRouter } from 'next/router';
 
 export const ShareLink = () => {
-  const URL = 'https://donghyun-hyejin-wedding-card.vercel.app/';
+  const { pathname } = useRouter();
+  const URL = `https://donghyun-hyejin-wedding-card.vercel.app${pathname}`;
   const kakaoKey = process.env.KAKAO_API_KEY;
 
   const handleShare = () => {
