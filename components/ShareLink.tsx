@@ -7,6 +7,7 @@ import { useRouter } from 'next/router';
 
 export const ShareLink = () => {
   const { pathname } = useRouter();
+  const MainUrl = `https://donghyun-hyejin-wedding-card.vercel.app`;
   const URL = `https://donghyun-hyejin-wedding-card.vercel.app${pathname}`;
   const kakaoKey = process.env.KAKAO_API_KEY;
 
@@ -38,7 +39,7 @@ export const ShareLink = () => {
         title: '박동현, 박혜진 결혼합니다',
         description:
           '6월 10일 토요일 오후 1시 10분 \n더 베네치아 3층 베네치아홀',
-        imageUrl: URL + 'meta.png',
+        imageUrl: MainUrl + 'meta.png',
         link: {
           mobileWebUrl: URL,
           webUrl: URL,
