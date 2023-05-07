@@ -5,6 +5,7 @@ import styled from '@emotion/styled';
 import MAIN from '@/public/images/main.jpg';
 import CALENDAR from '@/public/images/calendar.png';
 import LOCATION from '@/public/images/location.png';
+import { useRouter } from 'next/router';
 
 export const Intro = () => {
   return (
@@ -56,6 +57,8 @@ const TimeSpaceSection = () => {
 };
 
 const GreetingText = () => {
+  const { pathname } = useRouter();
+
   return (
     <InfoText>
       <div
@@ -90,44 +93,52 @@ const GreetingText = () => {
           color: '#C2B280',
         }}
       >
-        <p>
-          <span
-            style={{
-              fontSize: '0.7em',
-            }}
-          >
-            혼주
-          </span>
-          <span> 박일한 • 이기영 </span>
-          <span
-            style={{
-              fontSize: '0.7em',
-            }}
-          >
-            신랑
-          </span>
-          <span> 동현</span>
-        </p>
-        <p>
-          <span
-            style={{
-              fontSize: '0.7em',
-            }}
-          >
-            혼주
-          </span>
-          <span> 박건영 • 박은숙 </span>
-          <span
-            style={{
-              fontSize: '0.7em',
-            }}
-          >
-            신부
-          </span>
-          <span> 혜진</span>
-        </p>
+        {pathname === '/wedding3' ? <div>동현, 혜진 올림</div> : <FromInfo />}
       </div>
     </InfoText>
+  );
+};
+
+const FromInfo = () => {
+  return (
+    <>
+      <p>
+        <span
+          style={{
+            fontSize: '0.7em',
+          }}
+        >
+          혼주
+        </span>
+        <span> 박일한 • 이기영 </span>
+        <span
+          style={{
+            fontSize: '0.7em',
+          }}
+        >
+          신랑
+        </span>
+        <span> 동현</span>
+      </p>
+      <p>
+        <span
+          style={{
+            fontSize: '0.7em',
+          }}
+        >
+          혼주
+        </span>
+        <span> 박건영 • 박은숙 </span>
+        <span
+          style={{
+            fontSize: '0.7em',
+          }}
+        >
+          신부
+        </span>
+        <span> 혜진</span>
+      </p>
+    </>
   );
 };
 

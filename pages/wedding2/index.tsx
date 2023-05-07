@@ -2,7 +2,6 @@ import { NextPage } from 'next';
 import { Intro } from '@/components/Intro';
 import { Footer } from '@/components/Footer';
 import { Photo } from '@/components/Photo';
-import { Account } from '@/components/Account';
 import { MapInfo } from '@/components/MapInfo';
 import styled from '@emotion/styled';
 import { ShareLink } from '@/components/ShareLink';
@@ -28,7 +27,6 @@ const IndexPage: NextPage = () => {
         <Intro />
         <Photo />
         <MapInfo />
-        <Account />
         <Footer />
         <ShareLink />
         <Credit />
