@@ -40,11 +40,6 @@ export const Account = () => {
               bankAccountNumber="462201-01-059279"
             />
             <AccountInfo
-              name="박은숙"
-              bankName="국민은행"
-              bankAccountNumber="051-21-0972-480"
-            />
-            <AccountInfo
               name="박혜진"
               bankName="국민은행"
               bankAccountNumber="462202-01-344194"

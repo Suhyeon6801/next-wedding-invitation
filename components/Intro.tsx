@@ -91,24 +91,38 @@ const GreetingText = () => {
         }}
       >
         <p>
-          <span>박일한 • 이기영 </span>
           <span
             style={{
               fontSize: '0.7em',
             }}
           >
-            의 장남
+            혼주
+          </span>
+          <span> 박일한 • 이기영 </span>
+          <span
+            style={{
+              fontSize: '0.7em',
+            }}
+          >
+            신랑
           </span>
           <span> 동현</span>
         </p>
         <p>
-          <span>박건영 • 박은숙 </span>
           <span
             style={{
               fontSize: '0.7em',
             }}
           >
-            의 장녀
+            혼주
+          </span>
+          <span> 박건영 • 박은숙 </span>
+          <span
+            style={{
+              fontSize: '0.7em',
+            }}
+          >
+            신부
           </span>
           <span> 혜진</span>
         </p>
