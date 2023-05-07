@@ -3,7 +3,6 @@ import Script from 'next/script';
 
 const KAKAO_SDK_URL = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.KAKAO_API_KEY}&autoload=false`;
 
-// TODO: url이 정해지면 content 수정
 export default function Document() {
   return (
     <Html lang="en">
@@ -20,14 +19,14 @@ export default function Document() {
         <meta property="og:title" content="박동현, 박혜진 결혼합니다" />
         <meta
           property="og:url"
-          content="https://next-wedding-invitation.vercel.app/"
+          content="https://donghyun-hyejin-wedding-card.vercel.app/"
         />
         {/* twitter open graph */}
         <meta name="twitter:title" content="박동현, 박혜진 결혼합니다" />
         <meta name="twitter:image" content="./meta.png" />
         <meta
           name="twitter:url"
-          content="https://next-wedding-invitation.vercel.app/"
+          content="https://donghyun-hyejin-wedding-card.vercel.app/"
         />
         <link rel="icon" href="/favicon.png" />
         <Script src={KAKAO_SDK_URL} strategy="beforeInteractive" />
