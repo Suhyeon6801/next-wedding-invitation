@@ -118,7 +118,7 @@ const FromInfo = () => {
         >
           신랑
         </span>
-        <span> 동현</span>
+        <span> 박동현</span>
       </p>
       <p>
         <span
@@ -136,7 +136,7 @@ const FromInfo = () => {
         >
           신부
         </span>
-        <span> 혜진</span>
+        <span> 박혜진</span>
       </p>
     </>
   );
