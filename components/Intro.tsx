@@ -114,6 +114,7 @@ const FromInfo = () => {
         <span
           style={{
             fontSize: '0.7em',
+            marginLeft:'5px',
           }}
         >
           신랑
@@ -132,6 +133,7 @@ const FromInfo = () => {
         <span
           style={{
             fontSize: '0.7em',
+            marginLeft:'5px',
           }}
         >
           신부
